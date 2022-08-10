@@ -1,0 +1,84 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-user {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.user-details {
+  max-width: 1000px;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+  margin-top: 90px;
+  padding: 30px;
+  box-shadow: 0px 0px 4px 6px #dc143d;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.user-profile .profile-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.details-user {
+  display: inline-block;
+  text-align: center;
+}
+
+.user-profile h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.user-profile hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.user-profile h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 12px;
+}
+
+.user-profile a {
+  font-size: 1rem;
+  color: #dc143d;
+}
+
+.details-user .btn-change {
+  width: 190px;
+  height: 48px;
+  background: #dc143d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.profile_change .btn-change {
+  width: 190px;
+  height: 48px;
+  background: #dc143d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.btn-delete{
+  background-color: #dc143d;
+  color: #fff;
+  cursor: pointer;
+}
+

@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/*  styling scrollbars  */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #a5aaad;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc143d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a5aaad;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-primary-p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-title {
+    color: #2e4a66;
+}
+
+.text-lightblue {
+    color: #469cac;
+}
+
+.text-red {
+    color: #cc3d38;
+}
+
+.text-yellow {
+    color: #a98921;
+}
+
+.text-green {
+    color: #3b9668;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    background: #222;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: "sidebar nav nav nav" "sidebar main main main";
+}
+
+.home a {
+    padding: 12px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.063rem;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.home .homeBtn {
+    background: transparent;
+    color: #fff;
+    display: inline-block;
+    border: 3px solid #dc143d;
+    border-radius: 25px;
+}
+
+.home .homeBtn:hover {
+    border: 3px solid #003893;
+    background-color: #dc143d;
+}
+
+main {
+    grid-area: main;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.main__container {
+    padding: 20px 35px;
+}
+
+.main__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70px;
+    padding: 25px;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 0px 0px 6px 6px #dc143d;
+}
+
+.card_inner {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_inner>span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.card_inner>p {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/*  SIDEBAR STARTS HERE  */
+
+#sidebar {
+    background: #000000;
+    grid-area: sidebar;
+    overflow-y: auto;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+.sidebar__logo .logo {
+    width: 210px;
+    margin-top: -60px;
+    margin-bottom: -60px;
+}
+
+.sidebar__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #dc143d;
+    margin-bottom: 30px;
+}
+
+.sidebar__title>div>h1 {
+    font-size: 18px;
+    display: inline;
+}
+
+.sidebar__title>i {
+    font-size: 18px;
+    display: none;
+}
+
+.sidebar__link {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.sidebar__link>a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.sidebar__logout {
+    margin-top: 20px;
+    padding: 10px;
+    color: #dc143d;
+}
+
+.sidebar__logout>a {
+    text-decoration: none;
+    color: #e65061;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sidebar_responsive {
+    display: inline !important;
+    z-index: 9999 !important;
+    left: 0 !important;
+    position: absolute;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 35px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    display: inline-table;
+}
+
+.content-table thead tr {
+    background-color: #dc143d;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    color: #fff;
+}
+
+
+/*delete*/
+
+input[type=text],
+select {
+    width: 50%;
+    padding: 15px 20px;
+    margin: 18px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 35%;
+    background-color: #dc143d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #003893;
+}
+
+label {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+h2 {
+    color: #fff;
+}
+
+main {
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+.container1 {
+    width: 1300px;
+    height: auto;
+    margin: 20px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container1 .cards {
+    position: relative;
+    background: #dc143c;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.container1 .card {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.title_head {
+    margin-top: 20px;
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.card h1 {
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    background: #dc143d;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.25s ease-in-out;
+}

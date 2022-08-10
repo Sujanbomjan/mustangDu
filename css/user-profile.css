@@ -1,0 +1,137 @@
+.user-pro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-user {
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.user-profile {
+    max-width: 480px;
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    margin-top: 90px;
+    padding: 30px;
+    box-shadow: 0px 0px 4px 6px #dc143d;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.user-profile .profile-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-profile h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.user-profile h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 8px;
+}
+
+.user-profile a {
+    font-size: 1rem;
+    color: #dc143d;
+}
+
+.user-plan {
+    min-width: 800px;
+    color: #fff;
+    margin: auto;
+    margin-top: 90px;
+    padding: 30px;
+    box-shadow: 0px 0px 4px 6px #dc143d;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.user-plan h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.container_plan {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 54%;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+}
+
+.card-body {
+    margin-top: -35px;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 100%;
+    }
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+}

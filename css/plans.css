@@ -1,0 +1,69 @@
+/* immage container start */
+
+/* feature locations */
+.feature {
+  background-color: #222;
+  position: relative;
+  margin-top: -1.4rem;
+  margin: auto;
+  max-width: 1300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.feature h1 {
+  text-align: center;
+  padding: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.feature-1 {
+  width: 80%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.feature-2 {
+  background-color: #dc143d;
+  width: 400px;
+  height: 350px;
+  margin-bottom: 40px;
+  transition: 0.6s;
+}
+.feature-2 img {
+  width: 400px;
+  height: 250px;
+}
+.feature-2:hover {
+  transform: scale(1.03);
+}
+.content h2 {
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.content a {
+  text-decoration: none;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.063rem;
+  color: #fff;
+}
+.content .btn-see {
+  background: transparent;
+  display: inline-block;
+  border: 3px solid #fff;
+  border-radius: 25px;
+}
+.content .btn-see:hover {
+  background-color: #003893;
+}
